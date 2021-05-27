@@ -187,7 +187,7 @@ time.sleep(1)
 #Докачивание прошивки
 if not os.path.isfile('/tmp/{}.zip'.format(atolModel.encode('utf-8'))):
     print '\vСкачивание прошивки.....'
-    ftp = FTP('ftp.farmaimpex.ru', 'support', 'fdnj,ec')
+    ftp = FTP('ftp.farmaimpex.ru', 'user', 'password')
     ftp.cwd('incoming/KKT-ATOL-FW')
     out =('/tmp/{}.zip'.format(atolModel))
     with open (out, 'wb') as f:
