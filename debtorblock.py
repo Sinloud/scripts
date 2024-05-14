@@ -23,7 +23,7 @@ def Unblock():
                     "searchWildcardsEnabled": "true",
                     "search": {"host": api_lic}
                 },
-                "auth": "abc",
+                "auth": "apikey",
                 "id": 1
                 }
             )
@@ -41,7 +41,7 @@ def Unblock():
                 "hostids": host_id,
                 "search": {"name": "Блокировка ПАКа"},
             },
-            "auth": "abc",
+            "auth": "apikey",
             "id": 1
         })
         a = json.dumps(zabbinfo.json(), indent=3)
@@ -53,7 +53,7 @@ def Unblock():
                 "jsonrpc": "2.0",
                 "method": "item.delete",
                 "params": [item_id],
-                "auth": "abc",
+                "auth": "apikey",
                 "id": 1
             }
         )
@@ -123,7 +123,7 @@ def Block():
                     "history": "0",
                     "trends": "0"
                 },
-                "auth": "abc",
+                "auth": "apikey",
                 "id": 1
             }
         )
