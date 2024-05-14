@@ -1,4 +1,5 @@
 #!/bin/bash
+#Скрипт прошивки ККТ
 LOC=$(pwd)
 wget ftp://user:"password"@ftp.farmaimpex.ru/incoming/KKT-ATOL-FW/7942_77f.zip -P /tmp
 unzip /tmp/7942_77f.zip -d /tmp
