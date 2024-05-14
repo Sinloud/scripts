@@ -5,7 +5,7 @@ import requests
 import json
 import urllib3
 from pyzabbix import ZabbixAPI
-
+#Инструмент для ТП для блокировки работы приложения
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 #remove zenity banner
 def Unblock():
