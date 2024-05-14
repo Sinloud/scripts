@@ -66,7 +66,7 @@ def Unblock():
                     "groupids": ["58"],
                     "hostids": [host_id]
                 },
-                "auth": "abc",
+                "auth": "apikey",
                 "id": 1
             }
         )
@@ -79,7 +79,7 @@ def Unblock():
                 "output": "extend",
                 "hostids": ['"$line"']
             },
-            "auth": "abc",
+            "auth": "apikey",
             "id": 1
         })
         print(mta)
@@ -99,7 +99,7 @@ def Block():
                     "searchWildcardsEnabled": "true",
                     "search": {"host": api_lic}
                 },
-                "auth": "abc",
+                "auth": "apikey",
                 "id": 1
             })
         a = json.dumps(zabbinfo.json(), indent=3)
@@ -136,7 +136,7 @@ def Block():
                     "hosts": [{"hostid": host_id}],
                     "templates_clear": [{"templateid": "23426"}]
                 },
-                "auth": "abc",
+                "auth": "apikey",
                 "id": 1
             }
         )
@@ -149,7 +149,7 @@ def Block():
                     "groups": [{"groupid": "58"}],
                     "hosts": [{"hostid": host_id}]
                 },
-                "auth": "abc",
+                "auth": "apikey",
                 "id": 1
             }
         )
