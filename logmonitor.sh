@@ -1,4 +1,5 @@
 #!/bin/bash
+#Скрипт мониторинга логов на ошибки
 LOGSOURCE=/opt/pp-terminal/log/local_api_stdout.txt
 LOGFILE=/etc/zabbix/zabbix_agentd.d/errlog.txt
 LINE1="[HttpClient]"
