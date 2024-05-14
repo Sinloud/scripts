@@ -28,7 +28,7 @@ def mon_l2_plus():
                         "searchWildcardsEnabled": "true",
                         "search": {"host": api_lic}
                     },
-                    "auth": "abc",
+                    "auth": "apikey",
                     "id": 1
                 })
             a = json.dumps(zabbhost.json(), indent=3)
@@ -45,7 +45,7 @@ def mon_l2_plus():
                         "hostids": host_id,
                         "filter": {"name": "Monitor_HDD"}
                     },
-                    "auth": "abc",
+                    "auth": "apikey",
                     "id": 1
                 })
             a = json.dumps(mongroup.json(), indent=3)
@@ -61,7 +61,7 @@ def mon_l2_plus():
                             "groups": [{"groupid": "44"}],
                             "hosts": [{"hostid": host_id}]
                         },
-                        "auth": "abc",
+                        "auth": "apikey",
                         "id": 1
                     }
                 ):
@@ -92,7 +92,7 @@ def mon_l2_minus():
                         "searchWildcardsEnabled": "true",
                         "search": {"host": api_lic}
                     },
-                    "auth": "abc",
+                    "auth": "apikey",
                     "id": 1
                     }
                 )
@@ -111,7 +111,7 @@ def mon_l2_minus():
                         "hostids": host_id,
                         "filter": {"name": "Monitor_HDD"}
                     },
-                    "auth": "abc",
+                    "auth": "apikey",
                     "id": 1
                 })
             a = json.dumps(mongroup.json(), indent=3)
@@ -129,7 +129,7 @@ def mon_l2_minus():
                             "groupids": ["44"],
                             "hostids": [host_id]
                         },
-                        "auth": "abc",
+                        "auth": "apikey",
                         "id": 1
                     }
                 ):
