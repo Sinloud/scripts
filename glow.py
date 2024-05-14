@@ -4,7 +4,7 @@ import os
 import sys
 import time
 import json
-#delete old screenshots
+#Скрипт определения засветов камеры
 try:
     os.remove('/tmp/glow_front.jpg')
 except:
