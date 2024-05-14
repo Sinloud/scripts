@@ -4,7 +4,7 @@ import json
 import urllib3
 import socket
 from pyzabbix import ZabbixAPI
-
+#Инструмент для добавления ПК в группу мониторинга HDD
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 #function to add host to group
 def mon_l2_plus():
